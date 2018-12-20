@@ -1,9 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom'
 import Header from './Header';
-import Projects from '../pages/Projects';
-import About from '../pages/About';
-import Contact from '../pages/Contact';
 
 class Layout extends React.Component {
 
@@ -11,12 +7,10 @@ class Layout extends React.Component {
     return (
       <div style={{ marginRight: "20px", marginLeft: "20px" }}>
         <h1>Single Page Application</h1>
-        <BrowserRouter>
-          <div>
-            <Header/>
-            {this.props.children} 
-          </div>
-        </BrowserRouter>
+        <div>
+          <Header/>
+          {this.props.children} 
+        </div>
       </div>
     );
   }

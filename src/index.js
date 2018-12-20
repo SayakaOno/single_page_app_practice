@@ -7,10 +7,12 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 
 ReactDOM.render(
-  <Layout>
-    <Route exact path="/" component={Projects}></Route>
-    <Route path="/about" component={About}></Route>
-    <Route path="/contact" component={Contact}></Route>
-  </Layout>,
+  <BrowserRouter>
+    <Layout>
+      <Route path="" component={Projects}></Route>
+      <Route path="/about" component={About}></Route>
+      <Route path="/contact" component={Contact}></Route>
+    </Layout>
+  </BrowserRouter>,
   document.getElementById('root')
 )
