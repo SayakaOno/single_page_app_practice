@@ -1,1 +1,1 @@
-# single_page_app_practice
+# Simple Single Page Application practice
